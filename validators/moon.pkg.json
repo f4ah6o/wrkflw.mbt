@@ -1,0 +1,16 @@
+{
+  "import": [
+    {
+      "path": "f4ah6o/wrkflw_mbt/models",
+      "alias": "models"
+    },
+    {
+      "path": "f4ah6o/wrkflw_mbt/parser",
+      "alias": "parser"
+    },
+    {
+      "path": "f4ah6o/wrkflw_mbt/yaml",
+      "alias": "yaml"
+    }
+  ]
+}
