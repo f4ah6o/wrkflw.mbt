@@ -1,0 +1,6 @@
+{
+  "import": [
+    { "path": "f4ah6o/wrkflw_mbt/common", "alias": "common" },
+    { "path": "f4ah6o/wrkflw_mbt/pretty", "alias": "pretty" }
+  ]
+}
