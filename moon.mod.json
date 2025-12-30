@@ -1,10 +1,24 @@
 {
   "name": "f4ah6o/wrkflw_mbt",
   "version": "0.1.0",
+  "deps": {
+    "moonbitlang/quickcheck": "0.9.8"
+  },
   "readme": "README.mbt.md",
   "repository": "",
   "license": "Apache-2.0",
-  "keywords": [],
-  "description": "",
+  "keywords": [
+    "github-actions",
+    "workflow",
+    "validation",
+    "testing"
+  ],
+  "description": "GitHub Actions workflow validation library with property-based testing",
+  "dependencies": [
+    {
+      "path": "moonbitlang/quickcheck",
+      "version": ">=0.1.0"
+    }
+  ],
   "warn-list": "-unused_mut"
 }

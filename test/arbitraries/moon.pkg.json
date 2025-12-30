@@ -1,0 +1,12 @@
+{
+  "import": [
+    {
+      "path": "moonbitlang/quickcheck",
+      "alias": "qc"
+    },
+    {
+      "path": "f4ah6o/wrkflw_mbt/models",
+      "alias": "models"
+    }
+  ]
+}
