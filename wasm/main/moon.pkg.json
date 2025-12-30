@@ -1,0 +1,15 @@
+{
+  "is-main": true,
+  "import": [
+    {"path": "f4ah6o/wrkflw_mbt/models", "alias": "models"},
+    {"path": "f4ah6o/wrkflw_mbt/models/matrix", "alias": "matrix"},
+    {"path": "f4ah6o/wrkflw_mbt/parser", "alias": "parser"},
+    {"path": "f4ah6o/wrkflw_mbt/validators", "alias": "validators"},
+    {"path": "f4ah6o/wrkflw_mbt/yaml", "alias": "yaml"}
+  ],
+  "link": {
+    "wasm-gc": {
+      "exports": ["validate_workflow", "validate_gitlab_pipeline", "substitute", "version", "expand_matrix_json", "format_combination_name"]
+    }
+  }
+}

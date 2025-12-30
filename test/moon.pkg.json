@@ -9,8 +9,16 @@
       "alias": "models"
     },
     {
+      "path": "f4ah6o/wrkflw_mbt/models/matrix",
+      "alias": "matrix"
+    },
+    {
       "path": "f4ah6o/wrkflw_mbt/validators",
       "alias": "validators"
+    },
+    {
+      "path": "f4ah6o/wrkflw_mbt/yaml",
+      "alias": "yaml"
     },
     {
       "path": "f4ah6o/wrkflw_mbt/test/arbitraries",
