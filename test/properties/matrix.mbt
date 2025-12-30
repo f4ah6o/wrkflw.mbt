@@ -166,9 +166,9 @@ test "matrix_override_creation" {
     values["os"] = "ubuntu-22.04"
     values["node"] = "16"
 
-    let override = @matrix.MatrixOverride::from_values(values)
+    let ov = @matrix.MatrixOverride::from_values(values)
 
-    match override.values.get("os") {
+    match ov.values.get("os") {
       Some(v) => v == "ubuntu-22.04"
       None => false
     }

@@ -232,8 +232,8 @@ pub fn expand_matrix(strategy : @matrix.MatrixStrategy) -> Result[@matrix.Matrix
   let mut result = after_excludes
   let mut next_index = after_excludes.length()
   i = 0
-  while i < strategy.include.length() {
-    let inc = strategy.include[i]
+  while i < strategy.include_list.length() {
+    let inc = strategy.include_list[i]
     let mut new_combo = @matrix.MatrixCombination::from_values({}, next_index)
     let mut j = 0
     while j < dim_names.length() {
@@ -496,10 +496,7 @@ fn int_to_string(n : Int) -> String {
 ///|
 /// Convert uint to single character string
 fn uint_to_string(n : Int) -> String {
-  let mut result = ""
-  // Build string from single character
-  result = result + unsafe_uint_to_char(n)
-  result
+  unsafe_uint_to_char(n)
 }
 
 ///|
@@ -559,7 +556,7 @@ fn get_string_from_node(node : @yaml.YamlNode) -> String {
     @yaml.YString(s, _, _) => s
     @yaml.YNumber(s, _) => s
     @yaml.YBool(b, _) => if b { "true" } else { "false" }
-    @yaml.YNull => "null"
+    @yaml.YNull(_) => "null"
     _ => ""
   }
 }

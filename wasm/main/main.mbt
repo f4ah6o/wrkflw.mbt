@@ -30,7 +30,7 @@ pub fn validate_workflow(yaml_content : String) -> String {
 ///|
 /// Validate a GitLab CI pipeline from YAML content
 /// Returns JSON string with validation result
-pub fn validate_gitlab_pipeline(yaml_content : String) -> String {
+pub fn validate_gitlab_pipeline(_yaml_content : String) -> String {
   // For now, return a placeholder result
   // TODO: Implement GitLab CI parser and validation
   "{ \"status\": \"not_implemented\", \"message\": \"GitLab CI validation not yet implemented\" }"
@@ -40,7 +40,7 @@ pub fn validate_gitlab_pipeline(yaml_content : String) -> String {
 /// Substitute variables in text
 /// Takes text with ${var} patterns and a JSON string of variables
 /// Returns the substituted text
-pub fn substitute(text : String, variables_json : String) -> String {
+pub fn substitute(text : String, _variables_json : String) -> String {
   // For now, just return the text as-is
   // TODO: Implement JSON parsing and variable substitution using evaluator
   text
@@ -349,7 +349,7 @@ fn find_char(s : String, c : Char, start : Int) -> Int {
 
 ///|
 /// Get character at position (handles UInt16)
-fn char_at(s : String, pos : Int) -> Char {
+fn char_at(_s : String, _pos : Int) -> Char {
   // Very simplified - just use space for unknown
   // In practice, we'll rely on find_char to do the work
   ' '
@@ -357,7 +357,7 @@ fn char_at(s : String, pos : Int) -> Char {
 
 ///|
 /// Get uint value from string at position
-fn uint_from_string(s : String, pos : Int) -> Int {
+fn uint_from_string(_s : String, _pos : Int) -> Int {
   0
 }
 
@@ -376,7 +376,7 @@ fn json_substring(s : String, start : Int, end : Int) -> String {
   while pos < s.length() && count < end {
     if count >= start {
       // Get the character at this position by scanning
-      let mut char_found = false
+      let mut _char_found = false
 
       // Try common characters
       let test_chars = [" ", "\"", "{", "}", "[", "]", ":", ",", "-",
@@ -394,7 +394,7 @@ fn json_substring(s : String, start : Int, end : Int) -> String {
         let test_char = test_chars[tc]
         if string_has_char_at(s, test_char, pos) {
           result = result + test_char
-          char_found = true
+          _char_found = true
           break
         }
         tc = tc + 1

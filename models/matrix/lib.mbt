@@ -2,7 +2,7 @@
 /// Matrix strategy for GitHub Actions
 pub struct MatrixStrategy {
   dimensions : Map[String, MatrixDimension]
-  include : Array[MatrixOverride]
+  include_list : Array[MatrixOverride]
   exclude : Array[MatrixOverride]
   fail_fast : Bool?
   max_parallel : Int?
@@ -41,7 +41,7 @@ pub struct MatrixExpansion {
 pub fn MatrixStrategy::new() -> MatrixStrategy {
   {
     dimensions: {},
-    include: [],
+    include_list: [],
     exclude: [],
     fail_fast: None,
     max_parallel: None
@@ -95,18 +95,18 @@ pub fn MatrixDimension::one_dim(arr : Array[String]) -> MatrixDimension {
 /// Create MatrixStrategy from parts
 pub fn MatrixStrategy::from_parts(
   dimensions : Map[String, MatrixDimension],
-  include : Array[MatrixOverride],
+  include_list : Array[MatrixOverride],
   exclude : Array[MatrixOverride],
   fail_fast : Bool?,
   max_parallel : Int?
 ) -> MatrixStrategy {
-  { dimensions, include, exclude, fail_fast, max_parallel }
+  { dimensions, include_list, exclude, fail_fast, max_parallel }
 }
 
 ///|
 /// Create MatrixOverride from values
 pub fn MatrixOverride::from_values(values : Map[String, String]) -> MatrixOverride {
-  { values }
+  { values, }
 }
 
 ///|
