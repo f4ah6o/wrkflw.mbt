@@ -1,0 +1,8 @@
+{
+  "import": [
+    {
+      "path": "f4ah6o/wrkflw_mbt/yaml",
+      "alias": "yaml"
+    }
+  ]
+}
