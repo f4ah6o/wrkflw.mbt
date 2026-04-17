@@ -5,10 +5,6 @@
       "alias": "models"
     },
     {
-      "path": "f4ah6o/wrkflw_mbt/models/gitlab",
-      "alias": "gitlab"
-    },
-    {
       "path": "f4ah6o/wrkflw_mbt/models/matrix",
       "alias": "matrix"
     },

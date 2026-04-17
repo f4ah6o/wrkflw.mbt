@@ -2,7 +2,7 @@
   "name": "f4ah6o/wrkflw_mbt",
   "version": "0.1.0",
   "deps": {
-    "moonbitlang/quickcheck": "0.9.8"
+    "moonbitlang/quickcheck": "0.11.3"
   },
   "readme": "README.mbt.md",
   "repository": "",
